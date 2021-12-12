@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="/js/validarregistro.js"></script>
+    <title>Registrar Usuario</title>
+</head>
+
+<body>
+
+    <div class="container-fluid vh-100" style="margin-top: 20px;">
+        <div class="" style="margin-top: 200px;">
+            <div class="rounded d-flex justify-content-center bd-highlight">
+                <div class="col-md-4 col-sm-12 shadow-lg bg-light">
+                    <div class="text-center" style="background-color: #f888c0">
+                    </div>
+                    <form id="formregister" class="form" action="" style="background-color: #f888c0">
+                        <h3 class="text-primary text-center">Registrar usuario</h3>
+                        <div class=" p-4">
+                            <div class="input-group mb-3">
+                                <input type="username" class="form-control border-dark" placeholder="Usuario"
+                                    name="name" id="name" required />
+
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control border-dark" placeholder="Correo" name="email"
+                                    id="email" required />
+
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control border-dark" placeholder="Contraseña"
+                                    name="password" id="password" required />
+
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control border-dark"
+                                    placeholder="Confirmar Contraseña" name="password2" id="password2" required />
+
+                            </div>
+
+                            <div class="text-center">
+                                <button onclick="saveUser()" class="btn">Crear</button>
+                            </div>
+                            <p class="text-center mt-2">¿Ya tienes una cuenta?
+                                <a href="/login.html">Iniciar sesión</a>
+                            </p>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

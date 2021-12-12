@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+    <script type="text/javascript" src="js/productoForm.js"></script>  
+    <title>Registrar Productos</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+   
+   	<div class="container col-md-4 col-sm-12 shadow-lg" style="background-color: #f888c0;" >
+        <h1 class="text-center"> Productos</h1>
+        
+        <script type="text/javascript"> 
+            window.onload = traerInformacionProductos();
+            </script>
+
+    <div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control border-dark" placeholder="Marca" name="brand"
+                id="Pbrand" />
+
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control border-dark" placeholder="Categoria" name="category"
+                id="Pcategory" />
+
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control border-dark" placeholder="Presentación" name="presentation"
+                id="Ppresentation" />
+
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control border-dark" placeholder="Descripción" name="description"
+                id="Pdescription" />
+
+        </div>
+        
+        <div class="input-group mb-3">
+            <input type="number" class="form-control border-dark" placeholder="Precio" name="price"
+                id="Pprice"  />
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="number" class="form-control border-dark" placeholder="Cantidad" name="quantity"
+                id="Pquantity"  />
+
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control border-dark" placeholder="Fotografía" name="photography"
+                id="Pphotography" />
+
+        </div>
+
+        <div>
+            <label for="availability" class="text-dark">Disponibilidad</label><br>
+            <select name="availability" id="Pavailability" class="form-control border-dark" >
+                <option selected value="">Selecciona disponibilidad</option>
+                <option value="disponible">Disponible</option>
+                <option value="noDisponible">No disponible</option>
+            </select>
+        </div>
+    </div>
+     <div class="text-center">
+        <input type="submit" name="guardarProductos" class="btn btn-dark btn-md m-5" value="Guardar Producto" onclick="guardarInformacionProductos()"/>
+
+    </div>
+    </div>
+    
+    <div id="resultado" class="m-5"></div>
+        <ul><button class="btn btn-dark btn-md" onclick="window.location.href='/login.html'">Login</button> 
+        </ul>
+        <ul><button class="btn btn-dark btn-md" onclick="window.location.href='/userForm.html'">Formulario Usuarios</button> 
+        </ul>
+        <ul><button class="btn btn-dark btn-md" onclick="window.location.href='/registrarUser.html'">Registrar Usuario</button> 
+        </ul>
+</body>
+
+</html>
